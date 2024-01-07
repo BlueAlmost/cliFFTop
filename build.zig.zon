@@ -1,0 +1,10 @@
+.{
+    .name = "clifftop_example",
+    .version = "0.0.1",
+    .paths = .{""},
+    .dependencies = .{
+        .clifftop_zon_name = .{
+            .path = "../clifftop",
+        },
+    },
+}
