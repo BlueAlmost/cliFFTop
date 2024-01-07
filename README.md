@@ -2,10 +2,11 @@ cli***FFT***op contains a small collection of ffts written in zig
 
 ***Features:***
 
-* <ins> routines for complex-valued data, as well as strictly real-valued data
-* <ins> support f32, f64 data types
-* <ins> includes two bash scripts for i) running benchmarks (requires hyperfine), and ii) plotting benchmark results (requires gnuplot)
-* <ins> a motivation here was for audio processing (strictly real valued data)
+* Routines for complex-valued data, as well as strictly real-valued data.
+* Support f32, f64 data types.
+* Includes bash script for running benchmarks (requires hyperfine), result csv will be written to "results" directory. (Note: repository contains csv results from a test machine.  These will be overwritten by results for your test machine when running this bash script.)
+* Includes bash script for plotting benchmark results (requires gnuplot).
+* A motivation here was for audio processing (strictly real valued data).
 
 ***Example of benchmarking results:***
 
