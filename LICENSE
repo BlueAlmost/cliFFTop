@@ -1,0 +1,65 @@
+MIT License
+
+Copyright (c) 2024 BlueAlmost
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+------------------------------------------------------------------------
+
+The zig files, rfft_sorensen_lut.zig, and rfft_sorensen_no_lut.zig
+are based on the original published Sorensen FORTRAN program.
+
+Permission to use and distribute such code is found in the header of
+the FORTRAN files and included below:
+
+CC=================================================================CC
+CC                                                                 CC
+CC  Subroutine RSRFFT(X,M):                                        CC
+CC      A real-valued, in-place, split-radix FFT program           CC
+CC      Decimation-in-time, cos/sin in second loop                 CC
+CC      and computed recursively                                   CC
+CC      Output in order:                                           CC
+CC              [ Re(0),Re(1),....,Re(N/2),Im(N/2-1),...Im(1)]     CC
+CC                                                                 CC
+CC  Input/output                                                   CC
+CC      X    Array of input/output (length >= N)                   CC
+CC      M    Transform length is N=2**M                            CC
+CC                                                                 CC
+CC  Calls:                                                         CC
+CC      RSTAGE,RBITREV                                             CC
+CC                                                                 CC
+CC  Author:                                                        CC
+CC      H.V. Sorensen,   University of Pennsylvania,  Oct. 1985    CC
+CC                       Arpa address: hvs@ee.upenn.edu            CC
+CC  Modified:                                                      CC
+CC      F. Bonzanigo,    ETH-Zurich,                  Sep. 1986    CC
+CC      H.V. Sorensen,   University of Pennsylvania,  Mar. 1987    CC
+CC      H.V. Sorensen,   University of Pennsylvania,  Oct. 1987    CC
+CC                                                                 CC
+CC  Reference:                                                     CC
+CC      Sorensen, Jones, Heideman, Burrus :"Real-valued fast       CC
+CC      Fourier transform algorithms", IEEE Tran. ASSP,            CC
+CC      Vol. ASSP-35, No. 6, pp. 849-864, June 1987                CC
+CC      Mitra&Kaiser: "Digital Signal Processing Handbook, Chap.   CC
+CC      8, page 491-610, John Wiley&Sons, 1993                     CC
+CC                                                                 CC
+CC      This program may be used and distributed freely as         CC
+CC      as long as this header is included                         CC
+CC                                                                 CC
+CC=================================================================CC
