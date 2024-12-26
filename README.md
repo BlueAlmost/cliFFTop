@@ -11,3 +11,4 @@ cli***FFT***op contains a small collection of ffts written in zig
 
 ***Example of benchmarking results:***
 
+![comparison](https://github.com/user-attachments/assets/c7c709fd-d7c7-4958-aec1-186a0b1301b0)
