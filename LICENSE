@@ -22,7 +22,7 @@ SOFTWARE.
 
 ------------------------------------------------------------------------
 
-The zig files, rfft_sorensen_lut.zig, and rfft_sorensen_no_lut.zig
+The zig files, rfft_sorensen_lut.zig, and rfft_sorensen_no_lut.zig are
 are based on the original published Sorensen FORTRAN program.
 
 Permission to use and distribute such code is found in the header of
