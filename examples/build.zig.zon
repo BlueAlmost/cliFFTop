@@ -1,5 +1,6 @@
 .{
-   .name = "cliFFTop_example",
+   .name = .cliFFTop_example,
+   .fingerprint = 0x7cea252dc3c29993,
    .version = "0.0.1",
    .paths = .{""},
    .dependencies = .{
